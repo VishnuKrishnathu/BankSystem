@@ -1,0 +1,48 @@
+@import "./customers";
+$primary-color: #3ba1b7;
+* {
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  font-size: 15pt;
+  padding: 5px 3vw;
+  cursor: pointer;
+  background: $primary-color;
+  font-weight: bold;
+  color: white;
+  .icon {
+    margin-top: -13px;
+    padding-right: 3px;
+  }
+}
+.photos {
+  height: 80vh;
+  padding-bottom: 30px;
+}
+.debit {
+  position: relative;
+  background-image: url(/static/Images/debit-card.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -90px;
+  width: 100vw;
+  h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    color: white;
+  }
+}
+a {
+  border: 3px solid $primary-color;
+  text-decoration: none;
+  color: $primary-color;
+  padding: 10px 10px;
+}
