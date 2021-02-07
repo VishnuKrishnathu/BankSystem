@@ -4,11 +4,11 @@
   <div class="customers-db">
     {% for data in datas%}
     <div class="customer">
-      <div class="profilepic">J</div>
+      <a href="{% url 'customer' data.first_name %}" class="profilepic">J</a>
       <div class="dbname">
         <strong>Name: </strong>{{data.first_name}} {{data.last_name}}
       </div>
-      <div><strong>Balance Amount: </strong>Rs. {{data.account_balance}}</div>
+      <div><strong>Current Balance: </strong>Rs. {{data.account_balance}}</div>
     </div>
     {% endfor %}
   </div>
