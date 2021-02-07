@@ -3,7 +3,7 @@
   <div id="scaledpic">V</div>
   <div id="details">
     {% for i in data %}
-    <strong>First Name : {{i.first_name}}</strong>
+    <strong id="name">First Name : {{i.first_name}}</strong>
     <strong>Last Name : {{i.last_name}}</strong>
     <strong>Age : {{i.age}}</strong>
     <strong>Current Balance : Rs {{i.account_balance}}</strong>
@@ -17,4 +17,6 @@
 </form>
 {% if error %}
 <section id="error">Minimum Transfer Amount is Rs 50</section>
-{% endif %} {% endfor %}{% endblock %}
+{% endif %} {% endfor %}
+<script src="/static/js/details.js"></script>
+{% endblock %}

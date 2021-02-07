@@ -180,12 +180,17 @@ form #submit-butt {
 .photos {
   height: 80vh;
   padding-bottom: 30px;
+  overflow: hidden;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .debit {
   position: relative;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: black;
 }
 

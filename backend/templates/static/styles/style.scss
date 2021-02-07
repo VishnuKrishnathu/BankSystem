@@ -23,11 +23,14 @@ $primary-color: #3ba1b7;
 .photos {
   height: 80vh;
   padding-bottom: 30px;
+  overflow: hidden;
+  width: 100vw;
+  display: flex;
 }
 .debit {
   position: relative;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: black;
 
   h1 {
